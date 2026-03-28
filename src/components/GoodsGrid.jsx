@@ -13,7 +13,7 @@ export default function GoodsGrid() {
           display: "grid",
           gridTemplateColumns: "1fr 1fr",
           gap: 0,
-          maxWidth: 400,
+          maxWidth: 600,
           margin: "0 auto",
           textAlign: "center",
           fontFamily: "'Roboto', sans-serif",
@@ -33,7 +33,7 @@ export default function GoodsGrid() {
           display: "grid",
           gridTemplateColumns: "1fr 1fr",
           gap: 3,
-          maxWidth: 400,
+          maxWidth: 600,
           margin: "0 auto",
         }}
       >
@@ -87,7 +87,7 @@ export default function GoodsGrid() {
       </div>
       <div
         style={{
-          maxWidth: 400,
+          maxWidth: 600,
           margin: "10px auto 0",
           padding: "12px 14px",
           background: q.highlight ? B.blue : B.white,
