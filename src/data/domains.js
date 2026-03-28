@@ -25,6 +25,19 @@ export const domains = {
       "Current law is enabling. Courts confronting antitrust challenges should apply rule-of-reason analysis and preserve the exclusion mechanism while requiring procedural fairness for contested cases.",
     ],
   },
+  corporate: {
+    short: "Corporate",
+    full: "Shareholder Rights and Corporate Governance",
+    steps: [
+      "Coordinating productive activity among dispersed shareholders, managers, and directors with divergent interests and asymmetric information.",
+      "The board of directors, operating through fiduciary duties, the business judgment rule, shareholder franchise, and the proxy system. Delaware\u2019s three-tier review spectrum (BJR, enhanced scrutiny, entire fairness) calibrates judicial intervention to governance conditions.",
+      "Delaware DGCL provides comprehensive legal infrastructure. The business judgment rule functions as a Pigouvian subsidy, reducing the private cost of governance production by shielding good-faith decisions from judicial second-guessing. Shareholder franchise provides the accountability mechanism.",
+      "Reduced agency costs, credible commitment to long-term strategy, efficient monitoring resource allocation, and protection of firm-specific human capital investments.",
+      "Capital market confidence, accurate price discovery enabling efficient capital allocation, employment stability, and supply chain reliability flowing to non-shareholder constituencies.",
+      "The shareholder rights movement treated corporate governance as a public good \u2014 more access improves quality. Say-on-pay produced a 127% increase in median S&P 500 CEO compensation (2011\u20132024). Proxy advisor concentration created robo-voting (7% to 23%). Passive indexers hold 20\u201325% of every S&P 500 company with 60\u201370 stewardship professionals each \u2014 governance in form without governance in function.",
+      "A category error. Reforms designed for public-good logic degraded club-good governance. Broader participation past the congestion threshold made monitoring shallow and sanctions toothless. Delaware\u2019s implicit calibration \u2014 BJR for functioning governance, enhanced scrutiny for structural conflicts, entire fairness for captured governance \u2014 is the right framework. Reforms that bypass it degrade rather than improve governance.",
+    ],
+  },
   university: {
     short: "University",
     full: "American University Governance",
