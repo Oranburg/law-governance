@@ -16,9 +16,9 @@
   --teal:         #B5E1E1;
 
   /* --- Functional (dark mode default) --- */
-  --bg:           #0A3255;
-  --bg-secondary: #0D3D68;
-  --bg-soft:      #1A4D7C;
+  --bg:           #000000;
+  --bg-secondary: #0A1628;
+  --bg-soft:      #0D3D68;
   --text:         #E5E7EB;
   --muted:        #9CA3AF;
   --border:       #1E5080;
