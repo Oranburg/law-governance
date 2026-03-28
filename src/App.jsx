@@ -11,7 +11,7 @@ export default function App() {
   return (
     <div
       style={{
-        maxWidth: 480,
+        maxWidth: 960,
         margin: "0 auto",
         background: B.white,
         minHeight: "100vh",

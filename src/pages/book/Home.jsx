@@ -101,7 +101,7 @@ export default function Home() {
             color: B.textMid,
             textAlign: "center",
             margin: "0 auto 16px",
-            maxWidth: 340,
+            maxWidth: 540,
             lineHeight: 1.45,
           }}
         >
@@ -146,7 +146,7 @@ export default function Home() {
             color: B.textMid,
             textAlign: "center",
             margin: "0 auto 18px",
-            maxWidth: 340,
+            maxWidth: 540,
             lineHeight: 1.45,
           }}
         >
@@ -162,7 +162,7 @@ export default function Home() {
             display: "flex",
             flexDirection: "column",
             gap: 10,
-            maxWidth: 400,
+            maxWidth: 600,
             margin: "0 auto",
           }}
         >
