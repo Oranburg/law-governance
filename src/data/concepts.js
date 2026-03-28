@@ -15,11 +15,83 @@ export const concepts = {
       },
       {
         head: "Four Elements",
-        text: "From the definition follow four indispensable functional elements. Decision-making: a recognized procedure for determining what collective action requires. Monitoring: systematic observation of member conduct, institutionalized rather than left to individual initiative. Sanctions: credible, graduated costs for violation, with exclusion as the paradigm in private governance. Adjustment: the capacity to revise rules and procedures when conditions change. If any element is disabled, governance does not merely weaken. It fails in a specific and recognizable way. The elements function as a system. Evaluating sanctions without asking whether monitoring is intact, or evaluating decision-making without asking whether adjustment works, misses the institution\u2019s actual vulnerabilities.",
+        text: "From the definition follow four indispensable functional elements. Decision-making: a recognized procedure for determining what collective action requires. Monitoring: systematic observation of member conduct, institutionalized rather than left to individual initiative. Sanctions: credible, graduated costs for violation, with exclusion as the paradigm in private governance. Adjustment: the capacity to revise rules and procedures when conditions change. If any element is disabled, governance does not merely weaken. It fails in a specific and recognizable way.",
       },
       {
-        head: 'Why \u201COntology\u201D',
+        head: "Why \u201COntology\u201D",
         text: "Ontology means a rigorous account of what something fundamentally is: its basic nature, its minimum requirements, its conditions of existence. Legal scholarship about governance has produced rich analysis within fields. It has not produced an ontology that travels across fields. Chapter 3 shows that four intellectual traditions came close: American Political Development, Commons\u2019s institutional economics, Ostrom\u2019s IAD framework, and Williamson\u2019s transaction cost economics. Each stopped short. The gap is real, and the book\u2019s definition is built to fill it.",
+      },
+    ],
+  },
+  clubgood: {
+    title: "Governance as a Club Good",
+    chapter: "Chapter 5",
+    tagline:
+      "The central theoretical move: governance institutions share the structural properties of club goods, and this classification explains why exclusion is constitutive and why governance is systematically undersupplied.",
+    sections: [
+      {
+        head: "The Classification",
+        text: "Using the Samuelson\u2013Buchanan\u2013Ostrom typology of goods, governance institutions occupy the club-good quadrant. They are excludable through membership boundaries and the sanction of expulsion. They are nonrivalrous up to a congestion threshold \u2014 governance mechanisms are shared without degradation until participation exceeds the institution\u2019s capacity for meaningful decision-making, monitoring, and sanctioning. They are voluntarily joined and self-financed through member contributions rather than taxation.",
+      },
+      {
+        head: "Three Defining Features",
+        text: "First, excludability through exclusion: the institution can deny access to nonmembers and expel violators, which means it can charge for membership and maintain quality standards. Second, non-rivalry up to congestion: governance mechanisms are not consumed by use, but defection past a threshold overwhelms monitoring and degrades quality. A board with three members can deliberate; a board with thirty can only vote. A professional association with a hundred members can monitor through personal knowledge; an association with ten thousand requires formal bureaucratic monitoring that changes the character of governance. Third, voluntary membership and self-financing: this distinguishes governance from state regulation.",
+      },
+      {
+        head: "Why This Matters",
+        text: "The classification explains three phenomena that are otherwise puzzling. First, why exclusion is the paradigm sanction \u2014 it imposes maximum cost on the violator at zero cost to the institution. Second, why governance is systematically undersupplied \u2014 members cannot charge non-member beneficiaries for the spillovers governance produces. Third, why the legal conditions identified in Chapter 4 are necessary \u2014 governance institutions require legal infrastructure to maintain their club-good properties.",
+      },
+      {
+        head: "Edge Cases",
+        text: "Mandatory membership institutions (bar associations, HOAs) lack the voluntary-membership feature. The book addresses these with two accountability mechanisms: mandatory internal appeals with independent review, and periodic re-authorization through sunset provisions. \u201CDamaged club goods\u201D are institutions whose exclusion mechanism has been legally disabled \u2014 they retain club-good structure but cannot function as clubs. These edge cases confirm rather than undermine the classification: the framework explains precisely how and why these institutions struggle.",
+      },
+    ],
+  },
+  surplus: {
+    title: "Governance Surplus",
+    chapter: "Chapter 6",
+    tagline:
+      "Governance is produced as a club good and consumed as a public good. Law that attacks the production mechanism destroys both.",
+    sections: [
+      {
+        head: "The Dual Structure",
+        text: "Governance institutions produce value in two distinct forms through two distinct mechanisms. Production is a club-good process: excludable, member-financed, voluntarily joined. Consumption is partly a public-good process: market integrity produced by exchange governance benefits all traders, not only exchange members; knowledge reliability produced by editorial governance benefits all readers, not only journal subscribers. Legal actors encountering governance invariably encounter it from the outside, through the consumption side, where it looks excludable and unfair. When law responds by attacking excludability, it attempts to correct the consumption problem by dismantling the production mechanism.",
+      },
+      {
+        head: "Member Benefits and Spillovers",
+        text: "Member benefits are direct: coordination, trust, monitoring, lower transaction costs. These accrue to members who bear governance costs. Spillovers flow to non-members who pay nothing. The diamond network\u2019s governance produces supply chain integrity for the entire jewelry industry. The NYSE\u2019s governance produced market integrity, price discovery, and systemic stability for all capital market participants. Commons governance produces environmental outcomes benefiting downstream populations. These are separate propositions. The book keeps them separate throughout.",
+      },
+      {
+        head: "Production Is Prior to Distribution",
+        text: "A governance institution that cannot exclude cannot produce governance at all, which means the spillovers that made the institution valuable disappear along with the club. Recognizing governance as a dual-structure good makes the framework\u2019s prescriptive direction precise: law should protect the production mechanism while targeting governance failures specifically, rather than dismantling production in the name of improving distribution. The two tasks are not equivalent, and conflating them is the structural error this book traces across six institutional domains.",
+      },
+    ],
+  },
+  degradation: {
+    title: "How Law Degrades Governance",
+    chapter: "Chapter 7",
+    tagline:
+      "Seven specific mechanisms through which legal rules damage governance institutions, and the critical distinction between disciplining governance and destroying it.",
+    sections: [
+      {
+        head: "Three Directions",
+        text: "Legal rules act on governance in three directions: enabling, degrading, and disciplining. Enabling mechanisms (judicial deference, enforceability of private ordering, property-rule protection of exclusion, legal recognition) reduce the cost of governance production. Degrading mechanisms raise those costs or disable governance elements entirely. Disciplining mechanisms correct genuine governance failures without collateral damage to the governance architecture. The seven degradation mechanisms below explain how law damages governance even when pursuing legitimate objectives.",
+      },
+      {
+        head: "Sanction-Disabling Mechanisms",
+        text: "Mechanism 1: Property-to-liability conversion. When courts convert exclusion from a property rule (the holder decides, at any price) to a liability rule (the taker pays damages afterward), the institution can no longer exclude with finality. Silver v. NYSE is the paradigm case. Mechanism 2: Procedural ossification. Requiring elaborate due process for every disciplinary action makes sanctions too costly to impose routinely. The intended safeguard against abuse becomes a structural barrier to governance. This parallels McGarity\u2019s \u201Crossification of rulemaking\u201D in administrative law \u2014 procedure designed to improve outcomes instead prevents them.",
+      },
+      {
+        head: "Rule-Corrupting Mechanisms",
+        text: "Mechanism 3: Juridification of contextual norms. When courts import private governance rules as implied contract terms (through UCC trade usage doctrine), they sever the rules from the enforcement mechanism that gave them force. Lisa Bernstein documented this with the National Grain and Feed Association: formal rules exist for arbitration, contextual norms govern daily trade, and importing either into the other\u2019s domain destroys both. Mechanism 4: Mandatory rule displacement. State-imposed rules that override private governance arrangements, even when the private arrangements functioned well. ERISA preemption of state benefit law is one example; mandatory corporate governance provisions that bypass Delaware\u2019s enabling framework are another.",
+      },
+      {
+        head: "Accountability-Removing Mechanisms",
+        text: "Mechanism 5: Standing removal without substitutes. Eliminating the mechanism through which affected parties enforce governance obligations without creating an alternative. The nonprofit standing gap is the paradigm: no stakeholder can enforce fiduciary duties against self-perpetuating boards. Mechanism 6: Compliance substitution. Regulatory mandates that create an elaborate facade of governance activity satisfying regulators while leaving the actual accountability void intact. Title IX coordinators and Clery Act reporting at universities address outputs of governance failure without repairing the architecture that produces it. Mechanism 7: Mandatory open membership. Requiring open participation disables the institution\u2019s ability to screen members \u2014 the mechanism sustaining cooperation. Roberts v. Jaycees is the leading case.",
+      },
+      {
+        head: "Discipline vs. Destruction",
+        text: "The critical evaluative question is not whether law should intervene in governance \u2014 it often must \u2014 but whether the intervention targets the failed function at proportionate intensity, or whether it damages the governance architecture beyond what correction requires. Four criteria distinguish discipline from destruction: whether market power or exit constraints justify the intervention, whether the intervention targets the specific failure, whether structural conflicts create last-period defection problems, and whether the remedy is proportionate to the governance harm. The calibration has two dimensions: scope (which governance element is targeted) and intensity (how much cost is imposed on governance production).",
       },
     ],
   },
@@ -27,7 +99,7 @@ export const concepts = {
     title: "Governance Legibility",
     chapter: "Chapter 8",
     tagline:
-      "Making governance visible as a variable that legal analysis can weigh.",
+      "Making governance visible as a variable that legal analysis can weigh, the way information asymmetry became visible after Akerlof.",
     sections: [
       {
         head: "The Analogy",
@@ -44,26 +116,6 @@ export const concepts = {
       {
         head: "The Payoff",
         text: "The seven-step method converts legibility into a usable procedure. Identify the shared problem. Identify the governance institution. Describe the legal conditions of its existence. Trace member benefits and spillovers. Analyze how law acts on the institution. Render judgment. The method does not promise mechanical answers. It forces legal analysis to ask institutionally relevant questions in a stable sequence, making governance effects visible where ordinary doctrinal analysis leaves them obscure.",
-      },
-    ],
-  },
-  surplus: {
-    title: "Governance Surplus",
-    chapter: "Chapter 6",
-    tagline:
-      "Governance produces value in two distinct forms, and conflating them is a structural error.",
-    sections: [
-      {
-        head: "Two Outputs, Not One",
-        text: "Governance institutions produce direct benefits for members who bear governance costs: coordination, trust, monitoring, lower transaction costs. In some settings, governance also creates positive externalities for outsiders who pay nothing. Market integrity produced by exchange governance benefits all traders, not only exchange members. Knowledge reliability produced by editorial governance benefits all readers, not only journal subscribers. These are separate propositions. The book keeps them separate throughout.",
-      },
-      {
-        head: "The Prescriptive Consequence",
-        text: "Governance is produced through club good mechanisms: excludable, member-financed, voluntarily joined. Governance is consumed partly as a public good: non-excludable benefits flowing to beneficiaries who cannot be charged and did not choose to join. Legal actors encountering governance invariably encounter it from the outside, through the lens of the excluded or underserved. When law responds by attacking excludability (requiring reinstatement of expelled members, imposing liability for exclusion decisions, mandating open participation), it attempts to correct the consumption failure by dismantling the production mechanism.",
-      },
-      {
-        head: "Production is Prior to Distribution",
-        text: "A governance institution that cannot exclude cannot produce governance at all, which means the spillovers that made the institution valuable disappear along with the club. Recognizing governance as a dual-structure good, club good in production and public good in consumption, makes the framework\u2019s prescriptive direction precise: law should protect the production mechanism while targeting governance failures specifically, rather than dismantling production in the name of improving distribution. The two tasks are not equivalent, and conflating them is the structural error this book traces across six institutional domains.",
       },
     ],
   },
@@ -108,30 +160,6 @@ export const concepts = {
       {
         head: "The Structural Remedy",
         text: "The void exists because law has not supplied the accountability conditions governance requires. The remedy is structural: create stakeholder standing for faculty and students to enforce fiduciary obligations against boards. Require periodic board turnover. Condition tax exemption on governance functionality, not compliance paperwork. Target the void, not the symptoms.",
-      },
-    ],
-  },
-  laundering: {
-    title: "Governance Laundering",
-    chapter: "Chapter 14",
-    tagline:
-      "Invoking governance language to shield arrangements that serve private power.",
-    sections: [
-      {
-        head: "The Risk",
-        text: 'Governance language is not merely descriptive. It is normatively loaded. Calling an arrangement a \u201Cgovernance institution\u201D imports a legitimacy claim: governance is how groups manage shared problems, and institutions that manage shared problems deserve the legal protections that enable them to do so. The risk is that private actors will invoke governance language to shield arrangements that are, beneath the legitimating terminology, exercises of private power with no genuine governance function.',
-      },
-      {
-        head: "How It Works",
-        text: "An entity adopts formal governance trappings: a stated mission, a membership structure, bylaws, a dispute resolution procedure. It then invokes those trappings to claim the protection the framework provides for genuine governance exclusion. Trade associations described as governance institutions for their industries have functioned as price-fixing cartels. Professional licensing bodies described as governance institutions for their professions have functioned as barriers to entry protecting incumbents.",
-      },
-      {
-        head: "The Framework\u2019s Answer",
-        text: "The answer is the output-based functionality criteria the method specifies. An institution claiming governance protection bears the burden of demonstrating that its governance elements are functional in the output-based sense: monitoring generates conduct-governing information actually used in sanctions; sanctioning is applied at a frequency consistent with the observable violation rate; decision-making governs actual member conduct; rules have changed in response to documented changed circumstances. These output criteria require actual institutional activity: real arbitration proceedings with discoverable records, real sanction decisions with documented grounds, real rule changes with identifiable triggering conditions. An institution that can demonstrate structures but not outputs has earned only the presumption that further investigation is warranted.",
-      },
-      {
-        head: "The Boundary",
-        text: "The framework states its boundary clearly: governance analysis does not create an affirmative defense in civil rights litigation. Courts applying anti-discrimination law should not be required to conduct a governance evaluation before ordering compliance. The framework\u2019s role in that context is as a remedial design tool: informing how remedies can be structured to achieve civil rights objectives while minimizing unnecessary governance destruction. The question comes after the determination that a violation occurred, not before compliance is required.",
       },
     ],
   },

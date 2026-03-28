@@ -43,6 +43,25 @@ export default function About() {
       >
         Contents
       </h3>
+
+      {/* Introduction */}
+      <div style={{ marginBottom: 16 }}>
+        <div
+          style={{
+            fontFamily: fonts.body,
+            fontSize: "1rem",
+            color: B.textDark,
+            padding: "4px 0 4px 14px",
+            borderLeft: `2px solid ${B.border}`,
+            marginBottom: 2,
+            lineHeight: 1.5,
+            fontWeight: 500,
+          }}
+        >
+          Introduction
+        </div>
+      </div>
+
       {[
         {
           part: "I",
@@ -110,6 +129,24 @@ export default function About() {
           ))}
         </div>
       ))}
+
+      {/* Conclusion */}
+      <div style={{ marginBottom: 16 }}>
+        <div
+          style={{
+            fontFamily: fonts.body,
+            fontSize: "1rem",
+            color: B.textDark,
+            padding: "4px 0 4px 14px",
+            borderLeft: `2px solid ${B.border}`,
+            marginBottom: 2,
+            lineHeight: 1.5,
+            fontWeight: 500,
+          }}
+        >
+          Conclusion
+        </div>
+      </div>
 
       <div
         style={{
