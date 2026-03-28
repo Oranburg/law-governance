@@ -9,18 +9,23 @@ export default function About() {
           fontSize: "1.8rem",
           fontWeight: 700,
           color: B.accent,
+          textTransform: "uppercase",
           margin: "0 0 8px",
+          borderBottom: `3px solid ${B.accentRed}`,
+          paddingBottom: 6,
+          display: "inline-block",
         }}
       >
         About the Book
       </h2>
       <p
         style={{
-          fontFamily: fonts.body,
+          fontFamily: fonts.accent,
           fontSize: "1rem",
-          color: B.textMid,
+          color: B.muted,
           lineHeight: 1.7,
           marginBottom: 20,
+          marginTop: 10,
         }}
       >
         <em style={{ fontFamily: fonts.accent, fontSize: "1.05rem" }}>
@@ -115,9 +120,9 @@ export default function About() {
             <div
               key={i}
               style={{
-                fontFamily: fonts.body,
+                fontFamily: fonts.accent,
                 fontSize: "1rem",
-                color: B.textDark,
+                color: B.text,
                 padding: "4px 0 4px 14px",
                 borderLeft: `2px solid ${B.border}`,
                 marginBottom: 2,
@@ -152,8 +157,8 @@ export default function About() {
         style={{
           marginTop: 24,
           padding: "16px 18px",
-          background: B.offWhite,
-          borderRadius: 8,
+          background: B.bgSecondary,
+          borderRadius: "var(--radius-md)",
           border: `1px solid ${B.border}`,
         }}
       >
@@ -174,7 +179,7 @@ export default function About() {
           style={{
             fontFamily: fonts.accent,
             fontSize: "1.05rem",
-            color: B.textDark,
+            color: B.text,
             lineHeight: 1.6,
           }}
         >

@@ -57,9 +57,9 @@ function ExpandCard({ item, accent }) {
       onClick={() => setOpen(!open)}
       style={{
         padding: "14px 16px",
-        background: B.white,
+        background: B.bgSecondary,
         border: `1px solid ${B.border}`,
-        borderRadius: 8,
+        borderRadius: "var(--radius-md)",
         cursor: "pointer",
         transition: "all 0.15s",
       }}
@@ -87,7 +87,7 @@ function ExpandCard({ item, accent }) {
             style={{
               fontFamily: fonts.body,
               fontSize: "0.85rem",
-              color: B.textLight,
+              color: B.muted,
               fontWeight: 500,
             }}
           >
@@ -99,7 +99,7 @@ function ExpandCard({ item, accent }) {
         style={{
           fontFamily: fonts.body,
           fontSize: "0.95rem",
-          color: B.textMid,
+          color: B.muted,
           lineHeight: 1.5,
         }}
       >
@@ -113,7 +113,7 @@ function ExpandCard({ item, accent }) {
             borderTop: `1px solid ${B.border}`,
             fontFamily: fonts.body,
             fontSize: "1rem",
-            color: B.textDark,
+            color: B.text,
             lineHeight: 1.7,
           }}
         >
@@ -124,7 +124,7 @@ function ExpandCard({ item, accent }) {
         style={{
           fontFamily: fonts.body,
           fontSize: "0.8rem",
-          color: B.textLight,
+          color: B.muted,
           marginTop: 6,
           textAlign: "right",
         }}
@@ -200,7 +200,7 @@ export default function Home() {
       </div>
 
       {/* The Pattern */}
-      <section style={{ padding: "32px 20px 36px", background: B.white }}>
+      <section style={{ padding: "32px 20px 36px", background: B.bg }}>
         <div
           style={{
             fontFamily: fonts.body,
@@ -208,7 +208,7 @@ export default function Home() {
             fontWeight: 700,
             textTransform: "uppercase",
             letterSpacing: 2,
-            color: B.textLight,
+            color: B.muted,
             marginBottom: 4,
             textAlign: "center",
           }}
@@ -231,7 +231,7 @@ export default function Home() {
           style={{
             fontFamily: fonts.body,
             fontSize: "1rem",
-            color: B.textMid,
+            color: B.muted,
             textAlign: "center",
             margin: "0 auto 20px",
             maxWidth: 580,
@@ -258,7 +258,7 @@ export default function Home() {
       </section>
 
       {/* Where Governance Lives */}
-      <section style={{ padding: "32px 20px 36px", background: B.offWhite }}>
+      <section style={{ padding: "32px 20px 36px", background: B.bgSecondary }}>
         <div
           style={{
             fontFamily: fonts.body,
@@ -266,7 +266,7 @@ export default function Home() {
             fontWeight: 700,
             textTransform: "uppercase",
             letterSpacing: 2,
-            color: B.textLight,
+            color: B.muted,
             marginBottom: 4,
             textAlign: "center",
           }}
@@ -281,6 +281,8 @@ export default function Home() {
             color: B.accent,
             textAlign: "center",
             margin: "0 0 6px",
+            textTransform: "uppercase",
+            borderBottom: "none",
           }}
         >
           Where Governance Lives
@@ -289,7 +291,7 @@ export default function Home() {
           style={{
             fontFamily: fonts.body,
             fontSize: "1rem",
-            color: B.textMid,
+            color: B.muted,
             textAlign: "center",
             margin: "0 auto 20px",
             maxWidth: 540,
@@ -303,7 +305,7 @@ export default function Home() {
       </section>
 
       {/* Seven Steps */}
-      <section style={{ padding: "32px 20px 36px", background: B.white }}>
+      <section style={{ padding: "32px 20px 36px", background: B.bg }}>
         <div
           style={{
             fontFamily: fonts.body,
@@ -311,7 +313,7 @@ export default function Home() {
             fontWeight: 700,
             textTransform: "uppercase",
             letterSpacing: 2,
-            color: B.textLight,
+            color: B.muted,
             marginBottom: 4,
             textAlign: "center",
           }}
@@ -334,7 +336,7 @@ export default function Home() {
           style={{
             fontFamily: fonts.body,
             fontSize: "1rem",
-            color: B.textMid,
+            color: B.muted,
             textAlign: "center",
             margin: "0 auto 22px",
             maxWidth: 540,
@@ -348,7 +350,7 @@ export default function Home() {
       </section>
 
       {/* What This Framework Is Not */}
-      <section style={{ padding: "32px 20px 36px", background: B.offWhite }}>
+      <section style={{ padding: "32px 20px 36px", background: B.bgSecondary }}>
         <div
           style={{
             fontFamily: fonts.body,
@@ -356,7 +358,7 @@ export default function Home() {
             fontWeight: 700,
             textTransform: "uppercase",
             letterSpacing: 2,
-            color: B.textLight,
+            color: B.muted,
             marginBottom: 4,
             textAlign: "center",
           }}
@@ -379,7 +381,7 @@ export default function Home() {
           style={{
             fontFamily: fonts.body,
             fontSize: "1rem",
-            color: B.textMid,
+            color: B.muted,
             textAlign: "center",
             margin: "0 auto 20px",
             maxWidth: 580,
@@ -405,7 +407,7 @@ export default function Home() {
       </section>
 
       {/* Navigation cards */}
-      <section style={{ padding: "28px 20px", background: B.white }}>
+      <section style={{ padding: "28px 20px", background: B.bg }}>
         <div
           style={{
             display: "flex",
@@ -440,9 +442,9 @@ export default function Home() {
                 alignItems: "center",
                 gap: 14,
                 padding: "16px 18px",
-                background: B.white,
+                background: B.bgSecondary,
                 border: `1px solid ${B.border}`,
-                borderRadius: 8,
+                borderRadius: "var(--radius-md)",
                 cursor: "pointer",
                 textAlign: "left",
               }}
@@ -480,7 +482,7 @@ export default function Home() {
                   style={{
                     fontFamily: fonts.body,
                     fontSize: "0.95rem",
-                    color: B.textMid,
+                    color: B.muted,
                     lineHeight: 1.4,
                   }}
                 >

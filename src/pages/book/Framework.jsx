@@ -79,7 +79,11 @@ export default function Framework() {
           fontSize: "1.8rem",
           fontWeight: 700,
           color: B.accent,
+          textTransform: "uppercase",
           margin: "0 0 6px",
+          borderBottom: `3px solid ${B.accentRed}`,
+          paddingBottom: 6,
+          display: "inline-block",
         }}
       >
         The Framework
@@ -88,8 +92,9 @@ export default function Framework() {
         style={{
           fontFamily: fonts.body,
           fontSize: "1rem",
-          color: B.textMid,
+          color: B.muted,
           marginBottom: 24,
+          marginTop: 10,
           lineHeight: 1.6,
         }}
       >
@@ -106,7 +111,7 @@ export default function Framework() {
               fontWeight: 700,
               textTransform: "uppercase",
               letterSpacing: 1.5,
-              color: B.textLight,
+              color: B.muted,
               marginBottom: 10,
             }}
           >
@@ -119,10 +124,10 @@ export default function Framework() {
                 to={`/framework/${t.id}`}
                 style={{
                   padding: "16px 18px",
-                  background: B.white,
+                  background: B.bgSecondary,
                   border: `1px solid ${B.border}`,
                   borderLeft: `4px solid ${t.borderColor}`,
-                  borderRadius: 8,
+                  borderRadius: "var(--radius-md)",
                   cursor: "pointer",
                   display: "block",
                 }}
@@ -149,7 +154,7 @@ export default function Framework() {
                     style={{
                       fontFamily: fonts.body,
                       fontSize: "0.85rem",
-                      color: B.textLight,
+                      color: B.muted,
                       fontWeight: 500,
                     }}
                   >
@@ -160,7 +165,7 @@ export default function Framework() {
                   style={{
                     fontFamily: fonts.body,
                     fontSize: "0.95rem",
-                    color: B.textMid,
+                    color: B.muted,
                     lineHeight: 1.5,
                   }}
                 >

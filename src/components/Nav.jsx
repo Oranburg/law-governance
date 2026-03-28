@@ -51,9 +51,9 @@ export default function Nav() {
               key={n.to}
               to={n.to}
               style={{
-                fontFamily: fonts.body,
+                fontFamily: fonts.headline,
                 fontSize: "0.95rem",
-                fontWeight: active ? 700 : 500,
+                fontWeight: 700,
                 color: active ? B.yellow : B.lightBlue,
                 textTransform: "uppercase",
                 letterSpacing: 0.5,

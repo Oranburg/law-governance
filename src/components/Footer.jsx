@@ -6,14 +6,14 @@ export default function Footer() {
       style={{
         padding: "16px 16px",
         borderTop: `1px solid ${B.border}`,
-        background: B.offWhite,
+        background: B.bgSecondary,
       }}
     >
       <p
         style={{
           fontFamily: fonts.body,
           fontSize: "0.85rem",
-          color: B.textLight,
+          color: B.muted,
           lineHeight: 1.6,
           margin: 0,
         }}

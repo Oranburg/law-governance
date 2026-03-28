@@ -9,7 +9,7 @@ export default function ConceptDetail() {
   if (!c) {
     return (
       <div style={{ padding: "40px 20px", textAlign: "center" }}>
-        <p style={{ fontFamily: fonts.body, fontSize: "1rem", color: B.textMid }}>
+        <p style={{ fontFamily: fonts.body, fontSize: "1rem", color: B.muted }}>
           Concept not found.
         </p>
         <Link
@@ -61,7 +61,11 @@ export default function ConceptDetail() {
           fontSize: "1.8rem",
           fontWeight: 700,
           color: B.accent,
+          textTransform: "uppercase",
           margin: "0 0 6px",
+          borderBottom: `3px solid ${B.accentRed}`,
+          paddingBottom: 6,
+          display: "inline-block",
         }}
       >
         {c.title}
@@ -71,8 +75,9 @@ export default function ConceptDetail() {
           fontFamily: fonts.accent,
           fontSize: "1.15rem",
           fontStyle: "italic",
-          color: B.textMid,
+          color: B.muted,
           marginBottom: 24,
+          marginTop: 10,
           lineHeight: 1.6,
         }}
       >
@@ -93,10 +98,10 @@ export default function ConceptDetail() {
           </h3>
           <p
             style={{
-              fontFamily: fonts.body,
+              fontFamily: fonts.accent,
               fontSize: "1rem",
               lineHeight: 1.7,
-              color: B.textDark,
+              color: B.text,
               margin: 0,
             }}
           >
