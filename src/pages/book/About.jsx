@@ -2,15 +2,14 @@ import { B, fonts } from "../../brand/tokens";
 
 export default function About() {
   return (
-    <div style={{ padding: "20px 16px" }}>
+    <div style={{ padding: "28px 20px" }}>
       <h2
         style={{
           fontFamily: fonts.headline,
-          fontSize: 22,
+          fontSize: "1.8rem",
           fontWeight: 700,
           color: B.accent,
-          textTransform: "uppercase",
-          margin: "0 0 6px",
+          margin: "0 0 8px",
         }}
       >
         About the Book
@@ -18,13 +17,13 @@ export default function About() {
       <p
         style={{
           fontFamily: fonts.body,
-          fontSize: 15,
+          fontSize: "1rem",
           color: B.textMid,
-          lineHeight: 1.6,
-          marginBottom: 16,
+          lineHeight: 1.7,
+          marginBottom: 20,
         }}
       >
-        <em style={{ fontFamily: fonts.accent }}>
+        <em style={{ fontFamily: fonts.accent, fontSize: "1.05rem" }}>
           Law &amp; Governance: How Law Makes, Supports, and Weakens Governance
         </em>{" "}
         by Seth C. Oranburg. Forthcoming. The book defines governance as a
@@ -36,11 +35,10 @@ export default function About() {
       <h3
         style={{
           fontFamily: fonts.headline,
-          fontSize: 15,
+          fontSize: "1.4rem",
           fontWeight: 700,
           color: B.accent,
-          textTransform: "uppercase",
-          margin: "18px 0 8px",
+          margin: "24px 0 10px",
         }}
       >
         Contents
@@ -80,16 +78,16 @@ export default function About() {
           ],
         },
       ].map((p) => (
-        <div key={p.part} style={{ marginBottom: 14 }}>
+        <div key={p.part} style={{ marginBottom: 16 }}>
           <div
             style={{
               fontFamily: fonts.body,
-              fontSize: 10,
+              fontSize: "0.8rem",
               fontWeight: 700,
               textTransform: "uppercase",
               letterSpacing: 1.5,
               color: B.textRed,
-              marginBottom: 4,
+              marginBottom: 6,
             }}
           >
             Part {p.part}: {p.title}
@@ -99,11 +97,12 @@ export default function About() {
               key={i}
               style={{
                 fontFamily: fonts.body,
-                fontSize: 14,
+                fontSize: "1rem",
                 color: B.textDark,
-                padding: "3px 0 3px 12px",
+                padding: "4px 0 4px 14px",
                 borderLeft: `2px solid ${B.border}`,
                 marginBottom: 2,
+                lineHeight: 1.5,
               }}
             >
               {c}
@@ -114,8 +113,8 @@ export default function About() {
 
       <div
         style={{
-          marginTop: 20,
-          padding: "14px 16px",
+          marginTop: 24,
+          padding: "16px 18px",
           background: B.offWhite,
           borderRadius: 8,
           border: `1px solid ${B.border}`,
@@ -124,12 +123,12 @@ export default function About() {
         <div
           style={{
             fontFamily: fonts.body,
-            fontSize: 10,
+            fontSize: "0.8rem",
             fontWeight: 700,
             textTransform: "uppercase",
             letterSpacing: 1.5,
             color: B.accent,
-            marginBottom: 6,
+            marginBottom: 8,
           }}
         >
           Citation
@@ -137,9 +136,9 @@ export default function About() {
         <div
           style={{
             fontFamily: fonts.accent,
-            fontSize: 14,
+            fontSize: "1.05rem",
             color: B.textDark,
-            lineHeight: 1.5,
+            lineHeight: 1.6,
           }}
         >
           Seth C. Oranburg,{" "}

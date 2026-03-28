@@ -54,15 +54,14 @@ const items = [
 
 export default function Framework() {
   return (
-    <div style={{ padding: "20px 16px" }}>
+    <div style={{ padding: "28px 20px" }}>
       <h2
         style={{
           fontFamily: fonts.headline,
-          fontSize: 22,
+          fontSize: "1.8rem",
           fontWeight: 700,
           color: B.accent,
-          textTransform: "uppercase",
-          margin: "0 0 4px",
+          margin: "0 0 6px",
         }}
       >
         The Framework
@@ -70,23 +69,23 @@ export default function Framework() {
       <p
         style={{
           fontFamily: fonts.body,
-          fontSize: 14.5,
+          fontSize: "1rem",
           color: B.textMid,
-          marginBottom: 18,
-          lineHeight: 1.5,
+          marginBottom: 20,
+          lineHeight: 1.6,
         }}
       >
         Six original concepts that structure the book's argument. Each names a
         problem that legal analysis currently cannot see, and each supplies a
         tool for making it visible. Tap any to explore.
       </p>
-      <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
+      <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
         {items.map((t) => (
           <Link
             key={t.id}
             to={`/framework/${t.id}`}
             style={{
-              padding: "14px 16px",
+              padding: "16px 18px",
               background: B.white,
               border: `1px solid ${B.border}`,
               borderLeft: `4px solid ${t.borderColor}`,
@@ -105,11 +104,10 @@ export default function Framework() {
               <div
                 style={{
                   fontFamily: fonts.headline,
-                  fontSize: 14,
+                  fontSize: "1.1rem",
                   fontWeight: 700,
                   color: t.textColor,
-                  textTransform: "uppercase",
-                  marginBottom: 2,
+                  marginBottom: 3,
                 }}
               >
                 {t.title}
@@ -117,9 +115,9 @@ export default function Framework() {
               <div
                 style={{
                   fontFamily: fonts.body,
-                  fontSize: 10,
+                  fontSize: "0.85rem",
                   color: B.textLight,
-                  fontWeight: 600,
+                  fontWeight: 500,
                 }}
               >
                 {t.ch}
@@ -128,9 +126,9 @@ export default function Framework() {
             <div
               style={{
                 fontFamily: fonts.body,
-                fontSize: 13.5,
+                fontSize: "0.95rem",
                 color: B.textMid,
-                lineHeight: 1.4,
+                lineHeight: 1.5,
               }}
             >
               {t.desc}

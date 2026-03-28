@@ -12,7 +12,7 @@ export default function Footer() {
       <p
         style={{
           fontFamily: fonts.body,
-          fontSize: 10,
+          fontSize: "0.85rem",
           color: B.textLight,
           lineHeight: 1.6,
           margin: 0,

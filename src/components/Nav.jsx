@@ -34,11 +34,11 @@ export default function Nav() {
         to="/"
         style={{
           fontFamily: fonts.headline,
-          fontSize: 13,
+          fontSize: "1rem",
           fontWeight: 700,
           color: "#FFFFFF",
           textTransform: "uppercase",
-          letterSpacing: 1.5,
+          letterSpacing: 0.5,
         }}
       >
         Law &amp; Governance
@@ -52,11 +52,11 @@ export default function Nav() {
               to={n.to}
               style={{
                 fontFamily: fonts.body,
-                fontSize: 11,
+                fontSize: "0.95rem",
                 fontWeight: active ? 700 : 500,
                 color: active ? B.yellow : B.lightBlue,
                 textTransform: "uppercase",
-                letterSpacing: 0.8,
+                letterSpacing: 0.5,
                 borderBottom: active
                   ? `2px solid ${B.yellow}`
                   : "2px solid transparent",

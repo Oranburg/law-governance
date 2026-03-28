@@ -8,7 +8,6 @@ const phaseColor = {
   Evaluate: B.red,
 };
 
-// Theme-safe text colors for phase labels
 const phaseTextColor = {
   Describe: "var(--accent)",
   Analyze: "var(--accent)",
@@ -38,8 +37,8 @@ export default function MethodWalkthrough() {
               borderRadius: 20,
               cursor: "pointer",
               fontFamily: fonts.body,
-              fontSize: 12,
-              fontWeight: 600,
+              fontSize: "0.95rem",
+              fontWeight: 500,
             }}
           >
             {v.short}
@@ -49,7 +48,7 @@ export default function MethodWalkthrough() {
       <div
         style={{
           fontFamily: fonts.body,
-          fontSize: 13.5,
+          fontSize: "1rem",
           color: B.textLight,
           marginBottom: 14,
         }}
@@ -81,14 +80,14 @@ export default function MethodWalkthrough() {
                 display: "flex",
                 flexDirection: "column",
                 alignItems: "center",
-                width: 26,
-                minWidth: 26,
+                width: 28,
+                minWidth: 28,
               }}
             >
               <div
                 style={{
-                  width: 22,
-                  height: 22,
+                  width: 24,
+                  height: 24,
                   borderRadius: "50%",
                   background: isA || isP ? pc : B.indicatorInactive,
                   color: isA || isP ? "#FFFFFF" : B.textLight,
@@ -96,7 +95,7 @@ export default function MethodWalkthrough() {
                   alignItems: "center",
                   justifyContent: "center",
                   fontFamily: fonts.body,
-                  fontSize: 10,
+                  fontSize: "0.75rem",
                   fontWeight: 700,
                   boxShadow: isA ? `0 0 0 3px ${pc}33` : "none",
                 }}
@@ -119,7 +118,7 @@ export default function MethodWalkthrough() {
               <div
                 style={{
                   fontFamily: fonts.body,
-                  fontSize: 9,
+                  fontSize: "0.8rem",
                   fontWeight: 700,
                   textTransform: "uppercase",
                   letterSpacing: 1.2,
@@ -131,10 +130,9 @@ export default function MethodWalkthrough() {
               <div
                 style={{
                   fontFamily: isJ ? fonts.headline : fonts.body,
-                  fontSize: isA ? 14.5 : 13.5,
+                  fontSize: isA ? "1.05rem" : "1rem",
                   fontWeight: isA || isJ ? 700 : 400,
                   color: isJ ? B.textRed : B.textDark,
-                  textTransform: isJ ? "uppercase" : "none",
                 }}
               >
                 {sm.label}
@@ -143,13 +141,13 @@ export default function MethodWalkthrough() {
                 <div
                   style={{
                     marginTop: 6,
-                    padding: "10px 12px",
+                    padding: "12px 14px",
                     background: isJ ? B.bgDanger : B.offWhite,
                     borderLeft: `3px solid ${pc}`,
                     borderRadius: 8,
                     fontFamily: fonts.body,
-                    fontSize: 14.5,
-                    lineHeight: 1.6,
+                    fontSize: "1rem",
+                    lineHeight: 1.7,
                     color: B.textDark,
                   }}
                 >
@@ -171,15 +169,15 @@ export default function MethodWalkthrough() {
           onClick={() => setStep(Math.max(0, step - 1))}
           disabled={step === 0}
           style={{
-            padding: "7px 16px",
+            padding: "8px 18px",
             border: `1px solid ${step === 0 ? B.border : B.brightBlue}`,
             background: "transparent",
             color: step === 0 ? B.textLight : B.accent,
             borderRadius: 8,
             cursor: step === 0 ? "default" : "pointer",
             fontFamily: fonts.body,
-            fontSize: 12,
-            fontWeight: 600,
+            fontSize: "0.95rem",
+            fontWeight: 500,
           }}
         >
           Back
@@ -188,7 +186,7 @@ export default function MethodWalkthrough() {
           onClick={() => setStep(Math.min(6, step + 1))}
           disabled={step === 6}
           style={{
-            padding: "7px 16px",
+            padding: "8px 18px",
             border: "none",
             background:
               step === 6 ? B.border : step === 5 ? B.red : B.brightBlue,
@@ -196,8 +194,8 @@ export default function MethodWalkthrough() {
             borderRadius: 8,
             cursor: step === 6 ? "default" : "pointer",
             fontFamily: fonts.body,
-            fontSize: 12,
-            fontWeight: 600,
+            fontSize: "0.95rem",
+            fontWeight: 500,
           }}
         >
           {step === 5 ? "Render Judgment" : "Next"}

@@ -7,16 +7,16 @@ import MethodWalkthrough from "../../components/MethodWalkthrough";
 export default function Home() {
   return (
     <div>
-      <div style={{ background: B.blue, padding: "36px 20px 28px", textAlign: "center" }}>
+      <div style={{ background: B.blue, padding: "48px 20px 36px", textAlign: "center" }}>
         <div
           style={{
             fontFamily: fonts.body,
-            fontSize: 10,
+            fontSize: "0.85rem",
             fontWeight: 700,
             textTransform: "uppercase",
-            letterSpacing: 3,
+            letterSpacing: 2,
             color: B.lightBlue,
-            marginBottom: 10,
+            marginBottom: 12,
           }}
         >
           Seth C. Oranburg
@@ -24,13 +24,11 @@ export default function Home() {
         <h1
           style={{
             fontFamily: fonts.headline,
-            fontSize: 34,
+            fontSize: "2.5rem",
             fontWeight: 700,
             color: "#FFFFFF",
             lineHeight: 1.1,
-            margin: "0 0 8px",
-            textTransform: "uppercase",
-            letterSpacing: 1,
+            margin: "0 0 10px",
           }}
         >
           Law &amp; Governance
@@ -38,25 +36,29 @@ export default function Home() {
         <p
           style={{
             fontFamily: fonts.accent,
-            fontSize: 16,
+            fontSize: "1.2rem",
             color: B.lightBlue,
             fontStyle: "italic",
             margin: 0,
+            lineHeight: 1.5,
           }}
         >
           How Law Makes, Supports, and Weakens Governance
         </p>
       </div>
 
-      <div style={{ background: B.red, padding: "14px 20px" }}>
+      <div style={{ background: B.red, padding: "16px 20px" }}>
         <p
           style={{
             fontFamily: fonts.accent,
-            fontSize: 15,
+            fontSize: "1.15rem",
             color: "#FFFFFF",
             margin: 0,
-            lineHeight: 1.5,
+            lineHeight: 1.6,
             textAlign: "center",
+            maxWidth: 700,
+            marginLeft: "auto",
+            marginRight: "auto",
           }}
         >
           Law often changes institutions without seeing what those institutions
@@ -66,16 +68,16 @@ export default function Home() {
         </p>
       </div>
 
-      <section style={{ padding: "24px 16px 28px", background: B.white }}>
+      <section style={{ padding: "32px 20px 36px", background: B.white }}>
         <div
           style={{
             fontFamily: fonts.body,
-            fontSize: 10,
+            fontSize: "0.8rem",
             fontWeight: 700,
             textTransform: "uppercase",
             letterSpacing: 2,
             color: B.textLight,
-            marginBottom: 3,
+            marginBottom: 4,
             textAlign: "center",
           }}
         >
@@ -84,12 +86,11 @@ export default function Home() {
         <h2
           style={{
             fontFamily: fonts.headline,
-            fontSize: 20,
+            fontSize: "1.8rem",
             fontWeight: 700,
             color: B.accent,
             textAlign: "center",
-            margin: "0 0 4px",
-            textTransform: "uppercase",
+            margin: "0 0 6px",
           }}
         >
           Where Governance Lives
@@ -97,12 +98,12 @@ export default function Home() {
         <p
           style={{
             fontFamily: fonts.body,
-            fontSize: 13.5,
+            fontSize: "1rem",
             color: B.textMid,
             textAlign: "center",
-            margin: "0 auto 16px",
+            margin: "0 auto 20px",
             maxWidth: 540,
-            lineHeight: 1.45,
+            lineHeight: 1.6,
           }}
         >
           Many governance arrangements share the features of{" "}
@@ -111,16 +112,16 @@ export default function Home() {
         <GoodsGrid />
       </section>
 
-      <section style={{ padding: "24px 16px 28px", background: B.offWhite }}>
+      <section style={{ padding: "32px 20px 36px", background: B.offWhite }}>
         <div
           style={{
             fontFamily: fonts.body,
-            fontSize: 10,
+            fontSize: "0.8rem",
             fontWeight: 700,
             textTransform: "uppercase",
             letterSpacing: 2,
             color: B.textLight,
-            marginBottom: 3,
+            marginBottom: 4,
             textAlign: "center",
           }}
         >
@@ -129,12 +130,11 @@ export default function Home() {
         <h2
           style={{
             fontFamily: fonts.headline,
-            fontSize: 20,
+            fontSize: "1.8rem",
             fontWeight: 700,
             color: B.accent,
             textAlign: "center",
-            margin: "0 0 4px",
-            textTransform: "uppercase",
+            margin: "0 0 6px",
           }}
         >
           Seven Steps to Judgment
@@ -142,12 +142,12 @@ export default function Home() {
         <p
           style={{
             fontFamily: fonts.body,
-            fontSize: 13.5,
+            fontSize: "1rem",
             color: B.textMid,
             textAlign: "center",
-            margin: "0 auto 18px",
+            margin: "0 auto 22px",
             maxWidth: 540,
-            lineHeight: 1.45,
+            lineHeight: 1.6,
           }}
         >
           Pick an institution. Walk through the analysis. Step 7 renders a
@@ -156,12 +156,12 @@ export default function Home() {
         <MethodWalkthrough />
       </section>
 
-      <section style={{ padding: "24px 16px", background: B.white }}>
+      <section style={{ padding: "28px 20px", background: B.white }}>
         <div
           style={{
             display: "flex",
             flexDirection: "column",
-            gap: 10,
+            gap: 12,
             maxWidth: 600,
             margin: "0 auto",
           }}
@@ -190,7 +190,7 @@ export default function Home() {
                 display: "flex",
                 alignItems: "center",
                 gap: 14,
-                padding: "14px 16px",
+                padding: "16px 18px",
                 background: B.white,
                 border: `1px solid ${B.border}`,
                 borderRadius: 8,
@@ -200,8 +200,8 @@ export default function Home() {
             >
               <div
                 style={{
-                  width: 38,
-                  height: 38,
+                  width: 42,
+                  height: 42,
                   borderRadius: "50%",
                   background: c.iconBg,
                   display: "flex",
@@ -209,7 +209,7 @@ export default function Home() {
                   justifyContent: "center",
                   color: c.iconColor || "#FFFFFF",
                   fontFamily: fonts.headline,
-                  fontSize: 16,
+                  fontSize: "1.1rem",
                   fontWeight: 700,
                   flexShrink: 0,
                 }}
@@ -220,10 +220,9 @@ export default function Home() {
                 <div
                   style={{
                     fontFamily: fonts.headline,
-                    fontSize: 13,
+                    fontSize: "1.05rem",
                     fontWeight: 700,
                     color: B.accent,
-                    textTransform: "uppercase",
                   }}
                 >
                   {c.title}
@@ -231,8 +230,9 @@ export default function Home() {
                 <div
                   style={{
                     fontFamily: fonts.body,
-                    fontSize: 13,
+                    fontSize: "0.95rem",
                     color: B.textMid,
+                    lineHeight: 1.4,
                   }}
                 >
                   {c.desc}
@@ -243,15 +243,18 @@ export default function Home() {
         </div>
       </section>
 
-      <div style={{ background: B.blue, padding: "22px 20px", textAlign: "center" }}>
+      <div style={{ background: B.blue, padding: "28px 20px", textAlign: "center" }}>
         <p
           style={{
             fontFamily: fonts.accent,
-            fontSize: 15.5,
+            fontSize: "1.15rem",
             color: B.lightBlue,
             margin: 0,
-            lineHeight: 1.5,
+            lineHeight: 1.6,
             fontStyle: "italic",
+            maxWidth: 700,
+            marginLeft: "auto",
+            marginRight: "auto",
           }}
         >
           Legal analysis has learned to see rights, incentives, and remedies with
