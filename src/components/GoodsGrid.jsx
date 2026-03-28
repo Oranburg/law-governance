@@ -17,7 +17,7 @@ export default function GoodsGrid() {
           margin: "0 auto",
           textAlign: "center",
           fontFamily: fonts.body,
-          fontSize: 10,
+          fontSize: "0.8rem",
           fontWeight: 700,
           textTransform: "uppercase",
           letterSpacing: 1.5,
@@ -45,7 +45,7 @@ export default function GoodsGrid() {
               key={qq.id}
               onClick={() => setActive(qq.id)}
               style={{
-                padding: "16px 12px",
+                padding: "16px 14px",
                 background: isH ? B.brightBlue : isA ? B.offWhite : B.white,
                 border:
                   isA && !isH
@@ -56,17 +56,16 @@ export default function GoodsGrid() {
                 borderRadius: 8,
                 cursor: "pointer",
                 transition: "all 0.15s",
-                minHeight: 80,
+                minHeight: 90,
               }}
             >
               <div
                 style={{
                   fontFamily: fonts.headline,
-                  fontSize: 14,
+                  fontSize: "1.1rem",
                   fontWeight: 700,
                   color: isH ? B.yellow : B.textDark,
-                  textTransform: "uppercase",
-                  marginBottom: 3,
+                  marginBottom: 4,
                 }}
               >
                 {qq.label}
@@ -74,9 +73,9 @@ export default function GoodsGrid() {
               <div
                 style={{
                   fontFamily: fonts.body,
-                  fontSize: 12.5,
-                  color: isH ? "rgba(255,255,255,0.65)" : B.textLight,
-                  lineHeight: 1.3,
+                  fontSize: "0.95rem",
+                  color: isH ? "rgba(255,255,255,0.7)" : B.textLight,
+                  lineHeight: 1.4,
                 }}
               >
                 {qq.examples}
@@ -89,13 +88,13 @@ export default function GoodsGrid() {
         style={{
           maxWidth: 600,
           margin: "10px auto 0",
-          padding: "12px 14px",
+          padding: "14px 16px",
           background: q.highlight ? B.brightBlue : B.white,
           borderLeft: `3px solid ${q.highlight ? B.yellow : B.accent}`,
           borderRadius: 8,
           fontFamily: fonts.body,
-          fontSize: 14.5,
-          lineHeight: 1.55,
+          fontSize: "1rem",
+          lineHeight: 1.6,
           color: q.highlight ? "#FFFFFF" : B.textDark,
         }}
       >

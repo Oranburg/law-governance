@@ -8,15 +8,15 @@ export default function ConceptDetail() {
 
   if (!c) {
     return (
-      <div style={{ padding: "40px 16px", textAlign: "center" }}>
-        <p style={{ fontFamily: fonts.body, fontSize: 16, color: B.textMid }}>
+      <div style={{ padding: "40px 20px", textAlign: "center" }}>
+        <p style={{ fontFamily: fonts.body, fontSize: "1rem", color: B.textMid }}>
           Concept not found.
         </p>
         <Link
           to="/framework"
           style={{
             fontFamily: fonts.body,
-            fontSize: 12,
+            fontSize: "0.95rem",
             color: B.accent,
             fontWeight: 600,
           }}
@@ -28,19 +28,15 @@ export default function ConceptDetail() {
   }
 
   return (
-    <div style={{ padding: "20px 16px" }}>
+    <div style={{ padding: "28px 20px" }}>
       <Link
         to="/framework"
         style={{
-          background: "none",
-          border: "none",
-          cursor: "pointer",
           fontFamily: fonts.body,
-          fontSize: 12,
+          fontSize: "0.95rem",
           color: B.accent,
           fontWeight: 600,
-          padding: 0,
-          marginBottom: 16,
+          marginBottom: 18,
           display: "inline-block",
         }}
       >
@@ -49,7 +45,7 @@ export default function ConceptDetail() {
       <div
         style={{
           fontFamily: fonts.body,
-          fontSize: 10,
+          fontSize: "0.8rem",
           fontWeight: 700,
           textTransform: "uppercase",
           letterSpacing: 1.5,
@@ -62,11 +58,10 @@ export default function ConceptDetail() {
       <h2
         style={{
           fontFamily: fonts.headline,
-          fontSize: 22,
+          fontSize: "1.8rem",
           fontWeight: 700,
           color: B.accent,
-          textTransform: "uppercase",
-          margin: "0 0 4px",
+          margin: "0 0 6px",
         }}
       >
         {c.title}
@@ -74,26 +69,24 @@ export default function ConceptDetail() {
       <p
         style={{
           fontFamily: fonts.accent,
-          fontSize: 15,
+          fontSize: "1.15rem",
           fontStyle: "italic",
           color: B.textMid,
-          marginBottom: 20,
-          lineHeight: 1.5,
+          marginBottom: 24,
+          lineHeight: 1.6,
         }}
       >
         {c.tagline}
       </p>
       {c.sections.map((s, i) => (
-        <div key={i} style={{ marginBottom: 20 }}>
+        <div key={i} style={{ marginBottom: 24 }}>
           <h3
             style={{
               fontFamily: fonts.headline,
-              fontSize: 14,
+              fontSize: "1.4rem",
               fontWeight: 700,
               color: B.textRed,
-              textTransform: "uppercase",
-              margin: "0 0 6px",
-              letterSpacing: 0.5,
+              margin: "0 0 8px",
             }}
           >
             {s.head}
@@ -101,7 +94,7 @@ export default function ConceptDetail() {
           <p
             style={{
               fontFamily: fonts.body,
-              fontSize: 15,
+              fontSize: "1rem",
               lineHeight: 1.7,
               color: B.textDark,
               margin: 0,

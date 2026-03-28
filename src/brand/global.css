@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Oranburg Style — CSS Custom Properties v0.1
+   Oranburg Style — CSS Custom Properties v0.2
    Source: Oranburg-Style/web/css-variables.md
    ========================================================================== */
 
@@ -17,9 +17,9 @@
 
   /* --- Functional (dark mode default) --- */
   --bg:           #000000;
-  --bg-secondary: #0A1628;
+  --bg-secondary: #0A3255;
   --bg-soft:      #0D3D68;
-  --text:         #E5E7EB;
+  --text:         #FFFFFF;
   --muted:        #9CA3AF;
   --border:       #1E5080;
   --accent:       #6DACDE;
@@ -57,7 +57,7 @@
   --bg:           #FFFFFF;
   --bg-secondary: #F8F9FA;
   --bg-soft:      #E9ECEF;
-  --text:         #333333;
+  --text:         #000000;
   --muted:        #555555;
   --border:       #D0D8E4;
   --accent:       #2459A9;
@@ -81,6 +81,8 @@
 
 body {
   font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.7;
   color: var(--text);
   background: var(--bg);
   -webkit-font-smoothing: antialiased;
