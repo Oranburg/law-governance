@@ -1,5 +1,5 @@
 import { useParams, Link } from "react-router-dom";
-import { B } from "../../brand/tokens";
+import { B, fonts } from "../../brand/tokens";
 import { concepts } from "../../data/concepts";
 
 export default function ConceptDetail() {
@@ -9,15 +9,15 @@ export default function ConceptDetail() {
   if (!c) {
     return (
       <div style={{ padding: "40px 16px", textAlign: "center" }}>
-        <p style={{ fontFamily: "'Crimson Text', Georgia, serif", fontSize: 16, color: B.textMid }}>
+        <p style={{ fontFamily: fonts.body, fontSize: 16, color: B.textMid }}>
           Concept not found.
         </p>
         <Link
           to="/framework"
           style={{
-            fontFamily: "'Roboto', sans-serif",
+            fontFamily: fonts.body,
             fontSize: 12,
-            color: B.brightBlue,
+            color: B.accent,
             fontWeight: 600,
           }}
         >
@@ -35,9 +35,9 @@ export default function ConceptDetail() {
           background: "none",
           border: "none",
           cursor: "pointer",
-          fontFamily: "'Roboto', sans-serif",
+          fontFamily: fonts.body,
           fontSize: 12,
-          color: B.brightBlue,
+          color: B.accent,
           fontWeight: 600,
           padding: 0,
           marginBottom: 16,
@@ -48,12 +48,12 @@ export default function ConceptDetail() {
       </Link>
       <div
         style={{
-          fontFamily: "'Roboto', sans-serif",
+          fontFamily: fonts.body,
           fontSize: 10,
           fontWeight: 700,
           textTransform: "uppercase",
           letterSpacing: 1.5,
-          color: B.red,
+          color: B.textRed,
           marginBottom: 4,
         }}
       >
@@ -61,10 +61,10 @@ export default function ConceptDetail() {
       </div>
       <h2
         style={{
-          fontFamily: "'Oswald', sans-serif",
+          fontFamily: fonts.headline,
           fontSize: 22,
           fontWeight: 700,
-          color: B.blue,
+          color: B.accent,
           textTransform: "uppercase",
           margin: "0 0 4px",
         }}
@@ -73,7 +73,7 @@ export default function ConceptDetail() {
       </h2>
       <p
         style={{
-          fontFamily: "'Crimson Text', Georgia, serif",
+          fontFamily: fonts.accent,
           fontSize: 15,
           fontStyle: "italic",
           color: B.textMid,
@@ -87,10 +87,10 @@ export default function ConceptDetail() {
         <div key={i} style={{ marginBottom: 20 }}>
           <h3
             style={{
-              fontFamily: "'Oswald', sans-serif",
+              fontFamily: fonts.headline,
               fontSize: 14,
               fontWeight: 700,
-              color: B.red,
+              color: B.textRed,
               textTransform: "uppercase",
               margin: "0 0 6px",
               letterSpacing: 0.5,
@@ -100,7 +100,7 @@ export default function ConceptDetail() {
           </h3>
           <p
             style={{
-              fontFamily: "'Crimson Text', Georgia, serif",
+              fontFamily: fonts.body,
               fontSize: 15,
               lineHeight: 1.7,
               color: B.textDark,

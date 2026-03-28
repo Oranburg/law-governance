@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { B } from "../brand/tokens";
+import { B, fonts } from "../brand/tokens";
 import { quads } from "../data/quads";
 
 export default function GoodsGrid() {
@@ -16,7 +16,7 @@ export default function GoodsGrid() {
           maxWidth: 600,
           margin: "0 auto",
           textAlign: "center",
-          fontFamily: "'Roboto', sans-serif",
+          fontFamily: fonts.body,
           fontSize: 10,
           fontWeight: 700,
           textTransform: "uppercase",
@@ -46,14 +46,14 @@ export default function GoodsGrid() {
               onClick={() => setActive(qq.id)}
               style={{
                 padding: "16px 12px",
-                background: isH ? B.blue : isA ? B.offWhite : B.white,
+                background: isH ? B.brightBlue : isA ? B.offWhite : B.white,
                 border:
                   isA && !isH
-                    ? `2px solid ${B.brightBlue}`
+                    ? `2px solid ${B.accent}`
                     : isH
-                      ? `2px solid ${B.blue}`
+                      ? `2px solid ${B.brightBlue}`
                       : `1px solid ${B.border}`,
-                borderRadius: 6,
+                borderRadius: 8,
                 cursor: "pointer",
                 transition: "all 0.15s",
                 minHeight: 80,
@@ -61,7 +61,7 @@ export default function GoodsGrid() {
             >
               <div
                 style={{
-                  fontFamily: "'Oswald', sans-serif",
+                  fontFamily: fonts.headline,
                   fontSize: 14,
                   fontWeight: 700,
                   color: isH ? B.yellow : B.textDark,
@@ -73,7 +73,7 @@ export default function GoodsGrid() {
               </div>
               <div
                 style={{
-                  fontFamily: "'Crimson Text', Georgia, serif",
+                  fontFamily: fonts.body,
                   fontSize: 12.5,
                   color: isH ? "rgba(255,255,255,0.65)" : B.textLight,
                   lineHeight: 1.3,
@@ -90,13 +90,13 @@ export default function GoodsGrid() {
           maxWidth: 600,
           margin: "10px auto 0",
           padding: "12px 14px",
-          background: q.highlight ? B.blue : B.white,
-          borderLeft: `3px solid ${q.highlight ? B.yellow : B.brightBlue}`,
-          borderRadius: 4,
-          fontFamily: "'Crimson Text', Georgia, serif",
+          background: q.highlight ? B.brightBlue : B.white,
+          borderLeft: `3px solid ${q.highlight ? B.yellow : B.accent}`,
+          borderRadius: 8,
+          fontFamily: fonts.body,
           fontSize: 14.5,
           lineHeight: 1.55,
-          color: q.highlight ? B.white : B.textDark,
+          color: q.highlight ? "#FFFFFF" : B.textDark,
         }}
       >
         {q.note}

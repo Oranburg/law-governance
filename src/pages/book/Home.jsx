@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { B } from "../../brand/tokens";
+import { B, fonts } from "../../brand/tokens";
 import Term from "../../components/Term";
 import GoodsGrid from "../../components/GoodsGrid";
 import MethodWalkthrough from "../../components/MethodWalkthrough";
@@ -10,7 +10,7 @@ export default function Home() {
       <div style={{ background: B.blue, padding: "36px 20px 28px", textAlign: "center" }}>
         <div
           style={{
-            fontFamily: "'Roboto', sans-serif",
+            fontFamily: fonts.body,
             fontSize: 10,
             fontWeight: 700,
             textTransform: "uppercase",
@@ -23,10 +23,10 @@ export default function Home() {
         </div>
         <h1
           style={{
-            fontFamily: "'Oswald', sans-serif",
+            fontFamily: fonts.headline,
             fontSize: 34,
             fontWeight: 700,
-            color: B.white,
+            color: "#FFFFFF",
             lineHeight: 1.1,
             margin: "0 0 8px",
             textTransform: "uppercase",
@@ -37,7 +37,7 @@ export default function Home() {
         </h1>
         <p
           style={{
-            fontFamily: "'Crimson Text', Georgia, serif",
+            fontFamily: fonts.accent,
             fontSize: 16,
             color: B.lightBlue,
             fontStyle: "italic",
@@ -51,9 +51,9 @@ export default function Home() {
       <div style={{ background: B.red, padding: "14px 20px" }}>
         <p
           style={{
-            fontFamily: "'Crimson Text', Georgia, serif",
+            fontFamily: fonts.accent,
             fontSize: 15,
-            color: B.white,
+            color: "#FFFFFF",
             margin: 0,
             lineHeight: 1.5,
             textAlign: "center",
@@ -69,7 +69,7 @@ export default function Home() {
       <section style={{ padding: "24px 16px 28px", background: B.white }}>
         <div
           style={{
-            fontFamily: "'Roboto', sans-serif",
+            fontFamily: fonts.body,
             fontSize: 10,
             fontWeight: 700,
             textTransform: "uppercase",
@@ -83,10 +83,10 @@ export default function Home() {
         </div>
         <h2
           style={{
-            fontFamily: "'Oswald', sans-serif",
+            fontFamily: fonts.headline,
             fontSize: 20,
             fontWeight: 700,
-            color: B.blue,
+            color: B.accent,
             textAlign: "center",
             margin: "0 0 4px",
             textTransform: "uppercase",
@@ -96,7 +96,7 @@ export default function Home() {
         </h2>
         <p
           style={{
-            fontFamily: "'Crimson Text', Georgia, serif",
+            fontFamily: fonts.body,
             fontSize: 13.5,
             color: B.textMid,
             textAlign: "center",
@@ -114,7 +114,7 @@ export default function Home() {
       <section style={{ padding: "24px 16px 28px", background: B.offWhite }}>
         <div
           style={{
-            fontFamily: "'Roboto', sans-serif",
+            fontFamily: fonts.body,
             fontSize: 10,
             fontWeight: 700,
             textTransform: "uppercase",
@@ -128,10 +128,10 @@ export default function Home() {
         </div>
         <h2
           style={{
-            fontFamily: "'Oswald', sans-serif",
+            fontFamily: fonts.headline,
             fontSize: 20,
             fontWeight: 700,
-            color: B.blue,
+            color: B.accent,
             textAlign: "center",
             margin: "0 0 4px",
             textTransform: "uppercase",
@@ -141,7 +141,7 @@ export default function Home() {
         </h2>
         <p
           style={{
-            fontFamily: "'Crimson Text', Georgia, serif",
+            fontFamily: fonts.body,
             fontSize: 13.5,
             color: B.textMid,
             textAlign: "center",
@@ -169,15 +169,15 @@ export default function Home() {
           {[
             {
               to: "/framework",
-              icon: "◇",
+              icon: "\u25C7",
               iconBg: B.red,
               title: "The Framework",
               desc: "Six original concepts that structure the book\u2019s argument.",
             },
             {
               to: "/book",
-              icon: "§",
-              iconBg: B.blue,
+              icon: "\u00A7",
+              iconBg: B.brightBlue,
               iconColor: B.yellow,
               title: "About the Book",
               desc: "Table of contents, abstract, and citation.",
@@ -193,7 +193,7 @@ export default function Home() {
                 padding: "14px 16px",
                 background: B.white,
                 border: `1px solid ${B.border}`,
-                borderRadius: 6,
+                borderRadius: 8,
                 cursor: "pointer",
                 textAlign: "left",
               }}
@@ -207,8 +207,8 @@ export default function Home() {
                   display: "flex",
                   alignItems: "center",
                   justifyContent: "center",
-                  color: c.iconColor || B.white,
-                  fontFamily: "'Oswald', sans-serif",
+                  color: c.iconColor || "#FFFFFF",
+                  fontFamily: fonts.headline,
                   fontSize: 16,
                   fontWeight: 700,
                   flexShrink: 0,
@@ -219,10 +219,10 @@ export default function Home() {
               <div>
                 <div
                   style={{
-                    fontFamily: "'Oswald', sans-serif",
+                    fontFamily: fonts.headline,
                     fontSize: 13,
                     fontWeight: 700,
-                    color: B.blue,
+                    color: B.accent,
                     textTransform: "uppercase",
                   }}
                 >
@@ -230,7 +230,7 @@ export default function Home() {
                 </div>
                 <div
                   style={{
-                    fontFamily: "'Crimson Text', Georgia, serif",
+                    fontFamily: fonts.body,
                     fontSize: 13,
                     color: B.textMid,
                   }}
@@ -246,7 +246,7 @@ export default function Home() {
       <div style={{ background: B.blue, padding: "22px 20px", textAlign: "center" }}>
         <p
           style={{
-            fontFamily: "'Crimson Text', Georgia, serif",
+            fontFamily: fonts.accent,
             fontSize: 15.5,
             color: B.lightBlue,
             margin: 0,

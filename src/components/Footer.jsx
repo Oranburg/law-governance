@@ -1,4 +1,4 @@
-import { B } from "../brand/tokens";
+import { B, fonts } from "../brand/tokens";
 
 export default function Footer() {
   return (
@@ -11,7 +11,7 @@ export default function Footer() {
     >
       <p
         style={{
-          fontFamily: "'Roboto', sans-serif",
+          fontFamily: fonts.body,
           fontSize: 10,
           color: B.textLight,
           lineHeight: 1.6,

@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { B } from "../../brand/tokens";
+import { B, fonts } from "../../brand/tokens";
 
 const items = [
   {
@@ -7,42 +7,48 @@ const items = [
     title: "Governance Ontology",
     ch: "Ch 1",
     desc: "What governance fundamentally is: four elements, specified for legal analysis.",
-    color: B.blue,
+    borderColor: B.blue,
+    textColor: "var(--accent)",
   },
   {
     id: "surplus",
     title: "Governance Surplus",
     ch: "Ch 6",
     desc: "Two distinct outputs. Conflating member benefits with spillovers is the structural error.",
-    color: B.brightBlue,
+    borderColor: B.brightBlue,
+    textColor: "var(--accent)",
   },
   {
     id: "legibility",
     title: "Governance Legibility",
     ch: "Ch 8",
     desc: "Making governance visible as a variable legal analysis can weigh.",
-    color: B.blue,
+    borderColor: B.blue,
+    textColor: "var(--accent)",
   },
   {
     id: "missing",
     title: "The Missing Institution",
     ch: "Ch 9",
     desc: "What every member sees and what no court sees at the moment of decision.",
-    color: B.red,
+    borderColor: B.red,
+    textColor: "var(--text-red)",
   },
   {
     id: "void",
     title: "The Governance Void",
     ch: "Ch 12",
     desc: "Accountability absence behind an elaborate facade of formal structure.",
-    color: B.brightBlue,
+    borderColor: B.brightBlue,
+    textColor: "var(--accent)",
   },
   {
     id: "laundering",
     title: "Governance Laundering",
     ch: "Ch 14",
     desc: "Invoking governance language to shield private power from scrutiny.",
-    color: B.red,
+    borderColor: B.red,
+    textColor: "var(--text-red)",
   },
 ];
 
@@ -51,10 +57,10 @@ export default function Framework() {
     <div style={{ padding: "20px 16px" }}>
       <h2
         style={{
-          fontFamily: "'Oswald', sans-serif",
+          fontFamily: fonts.headline,
           fontSize: 22,
           fontWeight: 700,
-          color: B.blue,
+          color: B.accent,
           textTransform: "uppercase",
           margin: "0 0 4px",
         }}
@@ -63,7 +69,7 @@ export default function Framework() {
       </h2>
       <p
         style={{
-          fontFamily: "'Crimson Text', Georgia, serif",
+          fontFamily: fonts.body,
           fontSize: 14.5,
           color: B.textMid,
           marginBottom: 18,
@@ -83,8 +89,8 @@ export default function Framework() {
               padding: "14px 16px",
               background: B.white,
               border: `1px solid ${B.border}`,
-              borderLeft: `4px solid ${t.color}`,
-              borderRadius: 4,
+              borderLeft: `4px solid ${t.borderColor}`,
+              borderRadius: 8,
               cursor: "pointer",
               display: "block",
             }}
@@ -98,10 +104,10 @@ export default function Framework() {
             >
               <div
                 style={{
-                  fontFamily: "'Oswald', sans-serif",
+                  fontFamily: fonts.headline,
                   fontSize: 14,
                   fontWeight: 700,
-                  color: t.color,
+                  color: t.textColor,
                   textTransform: "uppercase",
                   marginBottom: 2,
                 }}
@@ -110,7 +116,7 @@ export default function Framework() {
               </div>
               <div
                 style={{
-                  fontFamily: "'Roboto', sans-serif",
+                  fontFamily: fonts.body,
                   fontSize: 10,
                   color: B.textLight,
                   fontWeight: 600,
@@ -121,7 +127,7 @@ export default function Framework() {
             </div>
             <div
               style={{
-                fontFamily: "'Crimson Text', Georgia, serif",
+                fontFamily: fonts.body,
                 fontSize: 13.5,
                 color: B.textMid,
                 lineHeight: 1.4,

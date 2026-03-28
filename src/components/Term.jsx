@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { B } from "../brand/tokens";
+import { B, fonts } from "../brand/tokens";
 import { glossary } from "../data/glossary";
 
 export default function Term({ children, id }) {
@@ -45,11 +45,11 @@ export default function Term({ children, id }) {
             background: B.white,
             border: `1px solid ${B.border}`,
             borderTop: `3px solid ${B.brightBlue}`,
-            borderRadius: 4,
+            borderRadius: 8,
             padding: "12px 14px",
             boxShadow: "0 6px 24px rgba(0,0,0,0.12)",
             zIndex: 100,
-            fontFamily: "'Crimson Text', Georgia, serif",
+            fontFamily: fonts.body,
             fontSize: 14,
             lineHeight: 1.5,
             color: B.textDark,
@@ -59,12 +59,12 @@ export default function Term({ children, id }) {
           <span
             style={{
               display: "block",
-              fontFamily: "'Roboto', sans-serif",
+              fontFamily: fonts.body,
               fontSize: 10,
               fontWeight: 700,
               textTransform: "uppercase",
               letterSpacing: 1.5,
-              color: B.brightBlue,
+              color: B.accent,
               marginBottom: 4,
             }}
           >
