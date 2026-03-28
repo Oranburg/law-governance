@@ -1,14 +1,14 @@
-import { B } from "../../brand/tokens";
+import { B, fonts } from "../../brand/tokens";
 
 export default function About() {
   return (
     <div style={{ padding: "20px 16px" }}>
       <h2
         style={{
-          fontFamily: "'Oswald', sans-serif",
+          fontFamily: fonts.headline,
           fontSize: 22,
           fontWeight: 700,
-          color: B.blue,
+          color: B.accent,
           textTransform: "uppercase",
           margin: "0 0 6px",
         }}
@@ -17,14 +17,14 @@ export default function About() {
       </h2>
       <p
         style={{
-          fontFamily: "'Crimson Text', Georgia, serif",
+          fontFamily: fonts.body,
           fontSize: 15,
           color: B.textMid,
           lineHeight: 1.6,
           marginBottom: 16,
         }}
       >
-        <em>
+        <em style={{ fontFamily: fonts.accent }}>
           Law &amp; Governance: How Law Makes, Supports, and Weakens Governance
         </em>{" "}
         by Seth C. Oranburg. Forthcoming. The book defines governance as a
@@ -35,10 +35,10 @@ export default function About() {
 
       <h3
         style={{
-          fontFamily: "'Oswald', sans-serif",
+          fontFamily: fonts.headline,
           fontSize: 15,
           fontWeight: 700,
-          color: B.blue,
+          color: B.accent,
           textTransform: "uppercase",
           margin: "18px 0 8px",
         }}
@@ -83,12 +83,12 @@ export default function About() {
         <div key={p.part} style={{ marginBottom: 14 }}>
           <div
             style={{
-              fontFamily: "'Roboto', sans-serif",
+              fontFamily: fonts.body,
               fontSize: 10,
               fontWeight: 700,
               textTransform: "uppercase",
               letterSpacing: 1.5,
-              color: B.red,
+              color: B.textRed,
               marginBottom: 4,
             }}
           >
@@ -98,7 +98,7 @@ export default function About() {
             <div
               key={i}
               style={{
-                fontFamily: "'Crimson Text', Georgia, serif",
+                fontFamily: fonts.body,
                 fontSize: 14,
                 color: B.textDark,
                 padding: "3px 0 3px 12px",
@@ -117,18 +117,18 @@ export default function About() {
           marginTop: 20,
           padding: "14px 16px",
           background: B.offWhite,
-          borderRadius: 6,
+          borderRadius: 8,
           border: `1px solid ${B.border}`,
         }}
       >
         <div
           style={{
-            fontFamily: "'Roboto', sans-serif",
+            fontFamily: fonts.body,
             fontSize: 10,
             fontWeight: 700,
             textTransform: "uppercase",
             letterSpacing: 1.5,
-            color: B.brightBlue,
+            color: B.accent,
             marginBottom: 6,
           }}
         >
@@ -136,7 +136,7 @@ export default function About() {
         </div>
         <div
           style={{
-            fontFamily: "'Crimson Text', Georgia, serif",
+            fontFamily: fonts.accent,
             fontSize: 14,
             color: B.textDark,
             lineHeight: 1.5,

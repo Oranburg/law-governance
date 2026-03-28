@@ -1,5 +1,9 @@
+// Oranburg Style tokens for React inline styles.
+// Palette colors are constant across themes.
+// Functional colors reference CSS custom properties and adapt to dark/light.
+
 export const B = {
-  // Primary palette
+  // Palette (constant across themes — used for brand elements)
   red: "#B21F2C",
   blue: "#0A3255",
   brightRed: "#E82F35",
@@ -9,17 +13,24 @@ export const B = {
   yellow: "#FFD65C",
   teal: "#B5E1E1",
 
-  // Neutrals
-  white: "#FFFFFF",
-  offWhite: "#F7F6F3",
-  textDark: "#1C1C1C",
-  textMid: "#555",
-  textLight: "#888",
-  border: "#DDD8D0",
+  // Functional (theme-aware via CSS custom properties)
+  white: "var(--bg)",
+  offWhite: "var(--bg-secondary)",
+  bgSoft: "var(--bg-soft)",
+  textDark: "var(--text)",
+  textMid: "var(--muted)",
+  textLight: "var(--muted)",
+  border: "var(--border)",
+  accent: "var(--accent)",
+  accentRed: "var(--accent-red)",
+  textRed: "var(--text-red)",
+  bgDanger: "var(--bg-danger)",
+  indicatorInactive: "var(--indicator-inactive)",
 };
 
 export const fonts = {
-  headline: "'Oswald', sans-serif",
-  body: "'Crimson Text', Georgia, serif",
-  ui: "'Roboto', sans-serif",
+  headline: "var(--font-headline)",
+  body: "var(--font-body)",
+  accent: "var(--font-accent)",
+  mono: "var(--font-mono)",
 };

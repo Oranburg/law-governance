@@ -1,5 +1,5 @@
 import { Routes, Route } from "react-router-dom";
-import { B } from "./brand/tokens";
+import { B, fonts } from "./brand/tokens";
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
 import Home from "./pages/book/Home";
@@ -11,11 +11,11 @@ export default function App() {
   return (
     <div
       style={{
-        maxWidth: 960,
+        maxWidth: 1100,
         margin: "0 auto",
         background: B.white,
         minHeight: "100vh",
-        fontFamily: "'Crimson Text', Georgia, serif",
+        fontFamily: fonts.body,
       }}
     >
       <Nav />

@@ -1,5 +1,6 @@
 import { Link, useLocation } from "react-router-dom";
-import { B } from "../brand/tokens";
+import { B, fonts } from "../brand/tokens";
+import ThemeToggle from "./ThemeToggle";
 
 const navItems = [
   { to: "/", label: "Home" },
@@ -32,17 +33,17 @@ export default function Nav() {
       <Link
         to="/"
         style={{
-          fontFamily: "'Oswald', sans-serif",
+          fontFamily: fonts.headline,
           fontSize: 13,
           fontWeight: 700,
-          color: B.white,
+          color: "#FFFFFF",
           textTransform: "uppercase",
           letterSpacing: 1.5,
         }}
       >
         Law &amp; Governance
       </Link>
-      <div style={{ display: "flex", gap: 14 }}>
+      <div style={{ display: "flex", alignItems: "center", gap: 14 }}>
         {navItems.map((n) => {
           const active = isActive(n.to);
           return (
@@ -50,7 +51,7 @@ export default function Nav() {
               key={n.to}
               to={n.to}
               style={{
-                fontFamily: "'Roboto', sans-serif",
+                fontFamily: fonts.body,
                 fontSize: 11,
                 fontWeight: active ? 700 : 500,
                 color: active ? B.yellow : B.lightBlue,
@@ -66,6 +67,7 @@ export default function Nav() {
             </Link>
           );
         })}
+        <ThemeToggle />
       </div>
     </nav>
   );
