@@ -69,8 +69,12 @@
   --indicator-inactive: #E0DDD6;
 }
 
-/* --- Base reset --- */
+/* --- Utility classes --- */
+.authority, .literary {
+  font-family: var(--font-accent);
+}
 
+/* --- Reset --- */
 *,
 *::before,
 *::after {
@@ -96,10 +100,4 @@ a {
 
 button {
   font: inherit;
-}
-
-/* --- Authority accent class --- */
-
-.authority, .literary {
-  font-family: var(--font-accent);
 }

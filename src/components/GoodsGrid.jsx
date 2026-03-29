@@ -21,7 +21,7 @@ export default function GoodsGrid() {
           fontWeight: 700,
           textTransform: "uppercase",
           letterSpacing: 1.5,
-          color: B.textLight,
+          color: B.muted,
           marginBottom: 6,
         }}
       >
@@ -46,14 +46,14 @@ export default function GoodsGrid() {
               onClick={() => setActive(qq.id)}
               style={{
                 padding: "16px 14px",
-                background: isH ? B.brightBlue : isA ? B.offWhite : B.white,
+                background: isH ? B.brightBlue : isA ? B.bgSoft : B.bgSecondary,
                 border:
                   isA && !isH
                     ? `2px solid ${B.accent}`
                     : isH
                       ? `2px solid ${B.brightBlue}`
                       : `1px solid ${B.border}`,
-                borderRadius: 8,
+                borderRadius: "var(--radius-md)",
                 cursor: "pointer",
                 transition: "all 0.15s",
                 minHeight: 90,
@@ -64,7 +64,8 @@ export default function GoodsGrid() {
                   fontFamily: fonts.headline,
                   fontSize: "1.1rem",
                   fontWeight: 700,
-                  color: isH ? B.yellow : B.textDark,
+                  color: isH ? B.yellow : B.text,
+                  textTransform: "uppercase",
                   marginBottom: 4,
                 }}
               >
@@ -72,9 +73,9 @@ export default function GoodsGrid() {
               </div>
               <div
                 style={{
-                  fontFamily: fonts.body,
+                  fontFamily: fonts.accent,
                   fontSize: "0.95rem",
-                  color: isH ? "rgba(255,255,255,0.7)" : B.textLight,
+                  color: isH ? "rgba(255,255,255,0.7)" : B.muted,
                   lineHeight: 1.4,
                 }}
               >
@@ -89,13 +90,13 @@ export default function GoodsGrid() {
           maxWidth: 600,
           margin: "10px auto 0",
           padding: "14px 16px",
-          background: q.highlight ? B.brightBlue : B.white,
+          background: q.highlight ? B.brightBlue : B.bgSecondary,
           borderLeft: `3px solid ${q.highlight ? B.yellow : B.accent}`,
-          borderRadius: 8,
-          fontFamily: fonts.body,
+          borderRadius: "var(--radius-md)",
+          fontFamily: fonts.accent,
           fontSize: "1rem",
           lineHeight: 1.6,
-          color: q.highlight ? "#FFFFFF" : B.textDark,
+          color: q.highlight ? "#FFFFFF" : B.text,
         }}
       >
         {q.note}
