@@ -34,7 +34,7 @@ export default function MethodWalkthrough() {
               background: domain === k ? B.brightBlue : "transparent",
               color: domain === k ? "#FFFFFF" : B.accent,
               border: `1.5px solid ${B.brightBlue}`,
-              borderRadius: 20,
+              borderRadius: "var(--radius-pill)",
               cursor: "pointer",
               fontFamily: fonts.body,
               fontSize: "0.95rem",
@@ -49,12 +49,12 @@ export default function MethodWalkthrough() {
         style={{
           fontFamily: fonts.body,
           fontSize: "1rem",
-          color: B.textLight,
+          color: B.muted,
           marginBottom: 14,
         }}
       >
         Applying the method to:{" "}
-        <strong style={{ color: B.textDark }}>{d.full}</strong>
+        <strong style={{ color: B.text }}>{d.full}</strong>
       </div>
       {stepMeta.map((sm, i) => {
         const isA = i === step;
@@ -90,7 +90,7 @@ export default function MethodWalkthrough() {
                   height: 24,
                   borderRadius: "50%",
                   background: isA || isP ? pc : B.indicatorInactive,
-                  color: isA || isP ? "#FFFFFF" : B.textLight,
+                  color: isA || isP ? "#FFFFFF" : B.muted,
                   display: "flex",
                   alignItems: "center",
                   justifyContent: "center",
@@ -129,10 +129,11 @@ export default function MethodWalkthrough() {
               </div>
               <div
                 style={{
-                  fontFamily: isJ ? fonts.headline : fonts.body,
+                  fontFamily: isJ ? fonts.headline : fonts.accent,
                   fontSize: isA ? "1.05rem" : "1rem",
                   fontWeight: isA || isJ ? 700 : 400,
-                  color: isJ ? B.textRed : B.textDark,
+                  color: isJ ? B.textRed : B.text,
+                  textTransform: isJ ? "uppercase" : "none",
                 }}
               >
                 {sm.label}
@@ -142,13 +143,13 @@ export default function MethodWalkthrough() {
                   style={{
                     marginTop: 6,
                     padding: "12px 14px",
-                    background: isJ ? B.bgDanger : B.offWhite,
+                    background: isJ ? B.bgDanger : B.bgSoft,
                     borderLeft: `3px solid ${pc}`,
-                    borderRadius: 8,
-                    fontFamily: fonts.body,
+                    borderRadius: "var(--radius-md)",
+                    fontFamily: fonts.accent,
                     fontSize: "1rem",
                     lineHeight: 1.7,
-                    color: B.textDark,
+                    color: B.text,
                   }}
                 >
                   {d.steps[i]}
@@ -172,8 +173,8 @@ export default function MethodWalkthrough() {
             padding: "8px 18px",
             border: `1px solid ${step === 0 ? B.border : B.brightBlue}`,
             background: "transparent",
-            color: step === 0 ? B.textLight : B.accent,
-            borderRadius: 8,
+            color: step === 0 ? B.muted : B.accent,
+            borderRadius: "var(--radius-md)",
             cursor: step === 0 ? "default" : "pointer",
             fontFamily: fonts.body,
             fontSize: "0.95rem",
@@ -190,8 +191,8 @@ export default function MethodWalkthrough() {
             border: "none",
             background:
               step === 6 ? B.border : step === 5 ? B.red : B.brightBlue,
-            color: step === 6 ? B.textLight : "#FFFFFF",
-            borderRadius: 8,
+            color: step === 6 ? B.muted : "#FFFFFF",
+            borderRadius: "var(--radius-md)",
             cursor: step === 6 ? "default" : "pointer",
             fontFamily: fonts.body,
             fontSize: "0.95rem",
